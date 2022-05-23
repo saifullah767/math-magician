@@ -16,7 +16,12 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "indent": [2, "tab", { "SwitchCase": 1, "VariableDeclarator": 1 }],
+    "no-tabs": 0,
+    "react/prop-types": 0,
+    "react/jsx-indent": [2, "tab"],
+    "react/jsx-indent-props": [2, "tab"],
   },
   "ignorePatterns": [
     "dist/",
