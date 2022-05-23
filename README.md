@@ -7,6 +7,7 @@
 - Make simple calculations.
 - Read a random math-related quote.
 
+
 ## Built With
 
 - React JS
@@ -15,17 +16,15 @@
 - Webpack
 - GitFlow
 
-
-
 ## Development set up
 
 Clone Repository using
 
-`git clone git@github.com:saifullah767/math-magician.git`
+
 
 OR using HTTPS
 
-`git clone https://github.com/saifullah767/math-magician.git`
+
 
 move into project directory
 
@@ -64,6 +63,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -77,12 +77,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Author
 
-👤 **Amrendra K**
+👤 **Saifullah**
 
 
 
-## 🤝 Contribution
-
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
