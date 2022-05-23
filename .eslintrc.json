@@ -6,6 +6,11 @@
   },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    },
     "babelOptions": {
        "presets": ["@babel/preset-react"]
     }
@@ -21,7 +26,7 @@
     "no-tabs": 0,
     "react/prop-types": 0,
     "react/jsx-indent": [2, "tab"],
-    "react/jsx-indent-props": [2, "tab"],
+    "react/jsx-indent-props": [2, "tab"]
   },
   "ignorePatterns": [
     "dist/",
