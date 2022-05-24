@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Calculator from './components/Calculator';
 import './App.css';
 
-/* eslint linebreak-style: [2, "windows"] */
+/* eslint linebreak-style: ["error", "windows"] */
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-/* eslint linebreak-style: [2, "windows"] */
+/* eslint linebreak-style: ["error", "windows"] */
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Calculator extends Component {
   render() {
