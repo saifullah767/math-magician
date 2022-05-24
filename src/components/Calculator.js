@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import React, { Component } from 'react';
 
 // eslint-disable-next-line react/prefer-stateless-function
