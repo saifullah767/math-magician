@@ -3,7 +3,6 @@ import Calculator from './components/Calculator';
 import './App.css';
 
 /* eslint linebreak-style: ["error", "windows"] */
-
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
   render() {
