@@ -1,76 +1,134 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Button from './Button';
 
-/* eslint linebreak-style: ["error", "windows"] */
-// eslint-disable-next-line react/prefer-stateless-function
-export default class Calculator extends Component {
+const buttons = [
+  {
+    label: 'AC',
+    isOperator: true,
+  },
+  {
+    label: '+/-',
+    isOperator: true,
+  },
+  {
+    label: '%',
+    isOperator: true,
+  },
+  {
+    label: '÷',
+    isOperator: true,
+  },
+  {
+    label: '7',
+    isOperator: false,
+  },
+  {
+    label: '8',
+    isOperator: false,
+  },
+  {
+    label: '9',
+    isOperator: false,
+  },
+  {
+    label: 'x',
+    isOperator: true,
+  },
+  {
+    label: '4',
+    isOperator: false,
+  },
+  {
+    label: '5',
+    isOperator: false,
+  },
+  {
+    label: '6',
+    isOperator: false,
+  },
+  {
+    label: '-',
+    isOperator: true,
+  },
+  {
+    label: '1',
+    isOperator: false,
+  },
+  {
+    label: '2',
+    isOperator: false,
+  },
+  {
+    label: '3',
+    isOperator: false,
+  },
+
+  {
+    label: '+',
+    isOperator: false,
+  },
+
+  {
+    label: '0',
+    isOperator: false,
+  },
+  {
+    label: '.',
+    isOperator: true,
+  },
+  {
+    label: '=',
+    isOperator: true,
+  },
+];
+
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: '0',
+      operation: null,
+    };
+    this.OnValueChange = this.OnValueChange.bind(this);
+  }
+
+  OnValueChange(calculate) {
+    this.setState({ ...calculate });
+  }
+
   render() {
+    const { total, next, operation } = this.state;
+    let val;
+    if (total !== null && next === null) {
+      val = total;
+    }
+    if (total === null && operation === null) {
+      val = next;
+    }
+    if (total !== null && operation !== null) {
+      val = total + operation;
+    }
+    if (total !== null && operation !== null && next !== null) {
+      val = total + operation + next;
+    }
     return (
-      <div>
-        <input type="text" className="calinput" />
-        <div className="buttons">
-          <div className="flex">
-            <button type="button"> AC </button>
-            <button type="button"> +/- </button>
-            <button type="button">%</button>
-            <button type="button" className="yellow">
-              ÷
-            </button>
-          </div>
-          <div className="flex">
-            <button type="button" className="seven">
-              7
-            </button>
-            <button type="button" className="eight">
-              8
-            </button>
-            <button type="button" className="nine">
-              9
-            </button>
-            <button type="button" className="yellow multiply">
-              x
-            </button>
-          </div>
-          <div className="flex">
-            <button type="button" className="seven">
-              4
-            </button>
-            <button type="button" className="eight">
-              5
-            </button>
-            <button type="button" className="nine">
-              6
-            </button>
-            <button type="button" className="yellow minus">
-              -
-            </button>
-          </div>
-          <div className="flex">
-            <button type="button" className="seven">
-              1
-            </button>
-            <button type="button" className="eight">
-              2
-            </button>
-            <button type="button" className="nine">
-              3
-            </button>
-            <button type="button" className="yellow multiply">
-              +
-            </button>
-          </div>
-          <div className="flex">
-            <button type="button" className="zero">
-              0
-            </button>
-            <button type="button" className="dot">
-              .
-            </button>
-            <button type="button" className="yellow equal">
-              =
-            </button>
-          </div>
+      <div className="calContainer">
+        <input type="text" placeholder="0" className="calInput" value={val} readOnly />
+        <div className="buttonContainer">
+          {
+          buttons.map((button) => (
+            <Button
+              label={button.label}
+              OnValueChange={this.OnValueChange}
+              objCalculation={this.state}
+              key={button.id}
+            />
+          ))
+      }
         </div>
       </div>
     );
   }
 }
+export default Calculator;
