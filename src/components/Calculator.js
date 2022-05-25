@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-/*eslint linebreak-style: ["error", "windows"]*/
+/* eslint linebreak-style: ["error", "windows"] */
 
 const buttons = [
   {

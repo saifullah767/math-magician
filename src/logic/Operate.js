@@ -1,5 +1,5 @@
 import Big from 'big.js';
-/*eslint linebreak-style: ["error", "windows"]*/
+/* eslint linebreak-style: ["error", "windows"] */
 
 export default function operate(numberOne, numberTwo, operation) {
   const one = Big(numberOne);
