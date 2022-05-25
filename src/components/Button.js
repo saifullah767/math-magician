@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/Calculate';
+/*eslint linebreak-style: ["error", "windows"]*/
 
 class Button extends React.Component {
   constructor(props) {

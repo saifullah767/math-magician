@@ -1,4 +1,5 @@
 import operate from './Operate';
+/*eslint linebreak-style: ["error", "windows"]*/
 
 function isNumber(item) {
   return !!item.match(/[0-9]+/);
