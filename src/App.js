@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import Calculator from './components/Calculator';
+import React from 'react';
 import './App.css';
+import Calculator from './components/Calculator';
 
 /* eslint linebreak-style: ["error", "windows"] */
 // eslint-disable-next-line react/prefer-stateless-function
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Calculator />
-      </div>
-    );
-  }
+class App extends React.PureComponent {  render() {
+  return (
+    <Calculator />
+  );
 }
+}
+
+export default App;
