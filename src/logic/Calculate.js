@@ -25,7 +25,11 @@ export default function calculate(obj, buttonName) {
 
   if (isNumber(buttonName)) {
     if (buttonName === '0' && obj.next === '0') {
-      return {};
+      return {
+        total: null,
+        next: '0',
+        operation: null,
+      };
     }
     // If there is an operation, update next
     if (obj.operation) {
@@ -39,11 +43,13 @@ export default function calculate(obj, buttonName) {
       return {
         next: obj.next + buttonName,
         total: null,
+        operation: null,
       };
     }
     return {
       next: buttonName,
       total: null,
+      operation: null,
     };
   }
 
@@ -75,7 +81,11 @@ export default function calculate(obj, buttonName) {
       };
     }
     // '=' with no operation, nothing to do
-    return {};
+    return {
+      total: null,
+      next: '0',
+      operation: null,
+    };
   }
 
   if (buttonName === '+/-') {
