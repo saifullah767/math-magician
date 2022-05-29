@@ -4,11 +4,6 @@ body {
   align-items: center;
 }
 
-button {
-  padding: 25px;
-  border: 1px ridge white;
-}
-
 .yellow {
   background-color: #f5913e;
 }
