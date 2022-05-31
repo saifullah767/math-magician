@@ -19,7 +19,6 @@ export default class App extends Component {
           <Route path="/math-magicians/quotes" element={<QuotesPage />} />
         </Routes>
       </div>
-      
     );
   }
 }
