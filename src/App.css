@@ -57,7 +57,6 @@
 .home-container {
   display: flex;
   justify-content: center;
-  height: 70vh;
   flex-direction: column;
   padding: 0 10px;
 }
@@ -89,7 +88,6 @@
 
 .calculator-container {
   padding: 0 10px;
-  display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
