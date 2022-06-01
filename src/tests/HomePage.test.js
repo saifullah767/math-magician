@@ -1,11 +1,11 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
 
-import HomePage from "../pages/HomePage";
+import HomePage from '../pages/HomePage';
 
-describe("Homepage", () => {
-	test("renders Homepage", () => {
-		render(<HomePage />);
-		screen.debug();
-	});
+describe('Homepage', () => {
+  test('renders Homepage', () => {
+    render(<HomePage />);
+    screen.debug();
+  });
 });
