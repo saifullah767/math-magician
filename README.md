@@ -16,6 +16,13 @@
 - Webpack
 - GitFlow
 
+## Heroku link
+
+- Heroku: [Web Link](https://mathmagician0900.herokuapp.com/)
+
+## Netlify link
+
+- Netlify: [Web Link](https://629938cceb6e09007daec34f--resplendent-cheesecake-25d580.netlify.app/)
 ## Development set up
 
 Clone Repository using
@@ -78,6 +85,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## Author
 
 👤 **Saifullah**
+
+- GitHub: [@githubhandle](https://github.com/saifullah767)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/saifullah-khan-b0637b169)
 
 
 
